@@ -1,0 +1,26 @@
+$pink: rgb(206, 123, 123);
+$black: rgb(0, 0, 0);
+$red: rgb(219, 25, 25);
+// $colorArray: #24abec, #236578; //creating an array varibale in sass
+
+body {
+  background-color: $color1;
+  color: $color2;
+
+  //   background-color: nth($colorArray, 2); //array accessing
+}
+
+//nesting in sass
+.productCard {
+  background-color: pink;
+  max-width: 600px;
+
+  //for direct child in element
+  > a {
+    color: black;
+  }
+  //for children in element
+  h2 {
+    color: red;
+  }
+}
